@@ -1,0 +1,36 @@
+# TD7 Photobox
+
+Fonctionnalites realisees :
+
+- chargement d'une photo a partir de son id
+- affichage des informations de la photo
+- recuperation de l'id dans l'url
+- affichage avec un template Handlebars
+- affichage de la categorie
+- affichage des commentaires
+
+Exercice 2 :
+
+- chargement d'une galerie de photos
+- affichage des vignettes
+
+Exercice 3 :
+
+- navigation dans la galerie
+- boutons first, prev, next et last
+
+Exercice 4 :
+
+- affichage d'une photo en cliquant sur une vignette
+
+Exercice 5 :
+
+- affichage en mode lightbox
+- fermeture de la lightbox
+- navigation entre les photos
+
+Compilation :
+
+```bash
+npm install
+npm run build

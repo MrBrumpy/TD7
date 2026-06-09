@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>td7 photobox</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<main id="photo">
+	<h1>Photo</h1>
+
+	<section id="la_photo"></section>
+	<button id="load_gallery">charger la galerie</button>
+
+	<div id="navigation">
+		<button id="first">first</button>
+		<button id="prev">prev</button>
+		<button id="next">next</button>
+		<button id="last">last</button>
+	</div>
+	<section id="galerie"></section>
+
+
+	<script id="galleryTemplate" type="text/x-handlebars-template">
+		{{#each photos}}
+		<div class="vignette">
+			<img src="https://webetu.iutnc.univ-lorraine.fr{{photo.thumbnail.href}}" data-photoId="{{photo.id}}">
+			<p>{{photo.titre}}</p>
+		</div>
+		{{/each}}
+	</script>
+</main>
+
+<script id="photoTemplate" type="text/x-handlebars-template">
+	<img src="https://webetu.iutnc.univ-lorraine.fr{{photo.url.href}}">
+	<h4>{{photo.titre}}</h4>
+	<p>{{photo.descr}}</p>
+	<p>{{photo.type}}, {{photo.width}} x {{photo.height}}</p>
+	<h4 id="la_categorie">categorie : categorie de l'image</h4>
+	<h4>commentaires :</h4>
+	<ul id="les_commentaires">
+	</ul>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="js/index.js" defer></script>
+
+
+</body>
+</html>

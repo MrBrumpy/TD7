@@ -1,0 +1,15 @@
+#galerie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.vignette {
+    width: 12rem;
+}
+
+.vignette img {
+    max-width: 12rem;
+    height: auto;
+}
+
